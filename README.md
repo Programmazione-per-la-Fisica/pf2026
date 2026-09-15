@@ -1,0 +1,43 @@
+# Programmazione per la Fisica 2026/2027
+
+Questa repository contiene materiale a supporto delle lezioni frontali
+dell'insegnamento di "Programmazione per la Fisica", corso di laurea in Fisica,
+Università di Bologna, Anno Accademico 2026/2027.
+
+Il contenuto della repository è scaricabile sul proprio computer usando il
+comando `git`:
+
+```shell
+git clone https://github.com/programmazione-per-la-fisica/pf2026.git
+```
+
+oppure scaricando direttamente un file `zip`.
+
+In particolare nella directory `tex` c'e' il sorgente della presentazione
+utilizzata a lezione. Il corrispondente file in formato `pdf` viene
+automaticamente generato a ogni modifica e reso disponibile nella sezione
+**Releases**. Per produrre la presentazione in locale:
+
+```shell
+cd tex
+make
+```
+
+Consultare il file [`Makefile`](tex/Makefile) per tutti i target disponibili.
+
+## Piattaforma di riferimento
+
+La piattaforma di riferimento del corso è la distribuzione Linux Ubuntu 26.04.
+Altre distribuzioni Linux (Ubuntu o altro) sufficientemente recenti possono
+andare altrettanto bene.
+
+Seguire le [guide](https://github.com/programmazione-per-la-fisica/howto) per la
+configurazione della piattaforma, nonché per poter utilizzare altri sistemi
+operativi, quali Windows e MacOS.
+
+## Editor
+
+Per uniformità tra tutte le piattaforme, l'editor consigliato è [Visual Studio
+Code](https://code.visualstudio.com/). Si rimanda alla pagina indicata per
+l'installazione. Si raccomanda di disinstallare o disabilitare ogni estensione
+relativa a sistemi di intelligenza artificiale.
