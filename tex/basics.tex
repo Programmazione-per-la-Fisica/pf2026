@@ -628,7 +628,8 @@ Hello, Francesco
         \bslash{"}world\bslash{"}"}
     \item \code{\bslash{}n} means ``newline''
     \end{itemize}
-  \item The type of a string literal is \textbf{not} \code{std::string}
+  \item The type of a string literal is \textbf{not} \code{std::string} (see
+    later)
   \end{itemize}
 
   \begin{codeblock}<+->{
@@ -776,25 +777,25 @@ a, b
 
   Read the program below and:
   \begin{itemize}
-  \item understand what it does (for now, common sense will help);
+  \item understand what it does (for now, common sense will help)
   \item write it yourself in an editor (avoid cut and paste), compile it (until
-        it works), execute it;
-  \item name the constructs highlighted \textcolor{blue}{in blue};
-  \item identify the expressions that have side effects.
+        it works), execute it
+  \item name the constructs highlighted \textcolor{blue}{in blue}
+  \item identify the expressions that have side effects
   \end{itemize}
 
   \begin{codeblock}{
-  #include <cmath>
-  #include <iostream>
+#include <cmath>
+#include <iostream>
 
-  int main() \{
-    std::cout << \textcolor{blue}{"Insert an integer number: "};
-    int \textcolor{blue}{n};
-    \textcolor{blue}{std::cin >> n};
-    \textcolor{blue}{int abs_n\{std::abs(n)\}};
-    std::cout << n << " absolute value is: " << abs_n << \bslashn{};
-    std::cout << n << \textcolor{blue}{(n > 0 ? " is also " : " is not ")}
-              << "a natural number\\n";
-  \}}\end{codeblock}
+int main() \{
+  std::cout << \textcolor{blue}{"Insert an integer number: "};
+  int \textcolor{blue}{n};
+  \textcolor{blue}{std::cin >> n};
+  \textcolor{blue}{int abs_n\{std::abs(n)\}};
+  std::cout << n << " absolute value is: " << abs_n << \bslashn{};
+  std::cout << n << \textcolor{blue}{(n >= 0 ? " is also " : " is not ")}
+            << "a natural number\\n";
+\}}\end{codeblock}
 
 \end{frame}
