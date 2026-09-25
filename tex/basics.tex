@@ -774,10 +774,11 @@ a, b
 
 \begin{frame}[fragile]{Exercise }
 
-  Read the program in the below and:
+  Read the program below and:
   \begin{itemize}
   \item understand what it does (for now, common sense will help);
-  \item write it in an editor, compile it (until it works), execute it;
+  \item write it yourself in an editor (avoid cut and paste), compile it (until
+        it works), execute it;
   \item name the constructs highlighted \textcolor{blue}{in blue};
   \item identify the expressions that have side effects.
   \end{itemize}
@@ -790,7 +791,7 @@ a, b
     std::cout << \textcolor{blue}{"Insert an integer number: "};
     int \textcolor{blue}{n};
     \textcolor{blue}{std::cin >> n};
-    \textcolor{blue}{int abs_n = std::abs(n)};
+    \textcolor{blue}{int abs_n\{std::abs(n)\}};
     std::cout << n << " absolute value is: " << abs_n << \bslashn{};
     std::cout << n << \textcolor{blue}{(n > 0 ? " is also " : " is not ")}
               << "a natural number\\n";
